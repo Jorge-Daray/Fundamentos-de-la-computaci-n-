@@ -1,0 +1,10 @@
+import math
+PI = math.pi
+n = int(input("numero de lados del poligono: "))
+s = float(input("longitud de cada lado: "))
+def Polysum(n,s):
+    Area = (.25*n*s**2)/(math.tan(PI/n))
+    Perimetro = n*s
+    Suma = Area +(Perimetro**2)
+    return round(Suma, 4)
+print(Polysum(n,s))
